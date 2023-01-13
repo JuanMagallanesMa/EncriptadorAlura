@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ENCRIPTADOR</title>
+        <link rel="stylesheet" href="reset.css">
+        <script src="procesos.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header onmousedown = 'return false' onselectstart = 'return false'>
+            <img id="logoalura" src="logoencriptador.png" >
+            <h1>Encriptador de Alura</h1>
+        </header>
+        <div class="cuerpo">
+            <img id="flecha" src="Flecha.png" title="flecha" onmousedown = 'return false' onselectstart = 'return false'>
+            <img id="atrascon" src="cuadro atras.png" onmousedown = 'return false' onselectstart = 'return false'>
+            <label id="adv" for="contenido" onmousedown = 'return false' onselectstart = 'return false'>Recuerda NO usar MAYUSCULAS o tildes! </label>
+            <textarea class="areaTexto" id="contenido" rows="5" cols="35" placeholder="Ingrese el texto a Encriptar/Desencriptar"></textarea>
+            <button name="btncambio"class="botones" id="btncambio" onclick="cambioDeLetras()">Encriptar</button><br>
+            
+            <textarea class="areaTexto" id="regreso" rows="5" cols="35" readonly="readonly" aria-selected="true" placeholder="Visualizara su resultado aqui"></textarea>
+            <button name="btncambioInver" class="botones" id="btncambioInver"onclick="cambioDeLetrasInverso()">Desencriptar</button>
+            <button class="botones" id="btnlimpiar" onclick="vacio()">Limpiar</button>
+            <button class="botones" id="btnguardar" name="btnguardar" onclick="copiarAlPortapeles()" >Copiar</button>
+            
+        </div>
+        <div class="informacion" onmousedown = 'return false' onselectstart = 'return false'>
+            <img class="info" src="informacion.png">
+            <div class="contenido-informacion">
+                <h1>¿Cómo encriptamos o desencriptamos?</h1>
+                
+                <h2> Identificamos las vocales:</h2>
+                <table class="conv">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Significados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>e</td>
+                            <td>enter</td>
+                        </tr>
+                        <tr>
+                            <td>i</td>
+                            <td>imes</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>ai</td>
+                        </tr>
+                        <tr>
+                            <td>o</td>
+                            <td>ober</td>
+                        </tr>
+                        <tr>
+                            <td>u</td>
+                            <td>ufat</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                    
+            </div>
+            
+        </div>
+        <footer onmousedown = 'return false' onselectstart = 'return false'>
+            <p class="copyright">&copy JuanMagallanes</p>
+        </footer>
+        
+    </body>
+</html>
+
+
